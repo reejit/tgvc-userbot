@@ -26,7 +26,7 @@ GROUP_CALLS = {}
 FFMPEG_PROCESSES = {}
 
 
-@Client.on_message(filters.command('start', prefixes='!'))
+@Client.on_message(filters.command('play', prefixes='!'))
 async def start(client, message: Message):
     input_filename = f'radio-{message.chat.id}.raw'
 
